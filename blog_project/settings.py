@@ -84,8 +84,13 @@ WSGI_APPLICATION = 'blog_project.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',   #配置mysql数据库信息
+        'NAME': 'blogdb',
+        'USER':'root',
+        'PASSWORD': '',
+        'HOST':'',
+        'PORT':'',
+
     }
 }
 
@@ -139,6 +144,9 @@ STATICFILES_DIRS = [
 SITE_NAME = '张勋的博客'
 SITE_DESC = '个人博客，关注python开发'
 
+
+# 自定义用户model
+AUTH_USER_MODEL = 'blog.User'
 
 
 # 自定义日志输出信息
