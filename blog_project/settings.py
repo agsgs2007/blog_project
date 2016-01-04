@@ -70,6 +70,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'blog.views.global_settings',   # 这里每个处理器在每个页面调用时都能调用
             ],
         },
     },
@@ -132,6 +133,11 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR,  'static'),
 ]
+
+
+# 网站的基本信息配置
+SITE_NAME = '张勋的博客'
+SITE_DESC = '个人博客，关注python开发'
 
 
 
