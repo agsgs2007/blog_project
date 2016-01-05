@@ -1,2 +1,4 @@
 2016-01-04 20:52:47,579 [Thread-2:7840] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2016-01-04 20:52:50,444 [Thread-4:3164] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-01-05 20:16:50,313 [Thread-2:1332] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-01-05 20:16:53,391 [Thread-4:680] [django.request:182] [base:get_response] [WARNING]- Not Found: /favicon.ico
