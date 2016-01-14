@@ -18,16 +18,14 @@ class ArticleAdmin(admin.ModelAdmin):
     list_display_links = ('title', 'desc',)
     list_editable = ('click_count',)
 
+
+    #定义modeladmin的媒体文件方式增加符文本编辑器
     class Media:
         js = (
             '/static/js/kindeditor-4.1.10/kindeditor-min.js',
             '/static/js/kindeditor-4.1.10/lang/zh_CN.js',
             '/static/js/kindeditor-4.1.10/config.js',
         )
-
-
-
-
 
 
 # 使用默认的方法在admin模块中注册模型，然后可以登录admin网页，需要
